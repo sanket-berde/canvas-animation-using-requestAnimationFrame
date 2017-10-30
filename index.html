@@ -1,0 +1,52 @@
+<html>
+<head>
+<style>
+*{
+	margin: 0;
+	text-align: center;
+}
+.activity-container{
+	width: 918px;
+	display: inline-block;
+}
+.buttons-container{
+	width: 100%;
+	box-sizing: border-box;
+    display: table;
+}
+
+.buttons-container button{
+	width: 50%;
+    box-sizing: border-box;
+    background: green;
+    outline: none;
+	border: 6px solid yellow;
+    display: table-cell;
+    padding: 9px;
+    color: white;
+    font-size: 22px;
+}
+
+#btn_pause{
+	background: #ff4800;
+}
+
+canvas{
+	background: #ffffca;
+}
+
+</style>
+</head>
+
+
+<body>
+	<div class="activity-container">
+		<canvas width="918" height="918" id="myCanvas"></canvas>
+		<div class="buttons-container">
+			<button id="btn_play">Play</button>
+			<button id="btn_pause">Pause</button>
+		</div>
+	</div>
+	<script src="script_.js"></script>
+</body>
+</html>
